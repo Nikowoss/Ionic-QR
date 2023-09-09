@@ -26,6 +26,22 @@ const routes: Routes = [
     path: 'formulario',
     loadChildren: () => import('./pages/formulario/formulario.module').then( m => m.FormularioPageModule)
   },
+  {
+    path: 'inicio-pagina-web',
+    loadChildren: () => import('./pages/inicio-pagina-web/inicio-pagina-web.module').then( m => m.InicioPaginaWebPageModule)
+  },
+  {
+    path: 'recuperar-contra',
+    loadChildren: () => import('./pages/recuperar-contra/recuperar-contra.module').then( m => m.RecuperarContraPageModule)
+  },
+  {
+    path: 'pagina-qr-profe',
+    loadChildren: () => import('./pages/pagina-qr-profe/pagina-qr-profe.module').then( m => m.PaginaQRProfePageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
 
 ];
 
