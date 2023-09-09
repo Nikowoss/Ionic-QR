@@ -1,33 +1,25 @@
-<ion-header>
-  <ion-toolbar color="dark" >
-    <ion-title>
-      Uso de Ionic
-    </ion-title>
-    <ion-icon slot="end" name="person" size="large" class="ion-padding"></ion-icon>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content class="ion-padding">
-  <ion-text color="primary">
-    <h1>Página home</h1>
-    
-  </ion-text>
-  <ion-text color="dark">
-    <p>Esta es la página inicial de la aplicación para aprender a usar <span class="chokita">IONIC</span> </p>
-  </ion-text>
- <!--  <ion-text color="tertiary" routerLink="/pagina1">
-    <h4>Página 1</h4>
-  </ion-text>  -->
-  <ion-button (click)="onClick('pagina1')" expand="full" color="primary">
-    Página Iconos
-  </ion-button>
-  <ion-button (click)="onClick('pagina2')" expand="full" color="secondary">
-    Página Botones
-  </ion-button>
-  <ion-button (click)="onClick('alertas')" expand="full" color="tertiary">
-    Página Alertas
-  </ion-button>
-  <ion-button (click)="onClick('formulario')" expand="full" color="success">
-    Página Formulario
-  </ion-button>
+<ion-content style="background-color: #00776E;" class="container">
+  <ion-title style="text-align: center; align-items: start; font-size: 20px; padding: 50px; margin-top: 50px; color: #00776E;">
+    Bienvenidos a Sin nombre
+  </ion-title>
+  <ion-card style="border-radius: 15px; margin-top: 150px; background-color:#00776E">
+    <ion-card-header>
+      <ion-title style="color: #AAE7E3; font-size: 16px; padding: 16px; margin-top: 10px;">
+        Inicia sesión para continuar
+      </ion-title>
+    </ion-card-header>
+    <ion-card-content style="color: #39C5BB;">
+      <div class="animated-item email-item" style="margin-top: 55px; font-size: 18px;">
+        <ion-icon name="mail" slot="start" ></ion-icon>
+        <ion-input style=" background-color: #fff; color:#39C5BB ; border-radius: 15px" type="text" class="input" placeholder="  Email" ></ion-input>
+      </div>
+      <div class="animated-item password-item" style="font-size: 18px; ">
+        <ion-icon name="lock-closed" slot="start"></ion-icon>
+        <ion-input type="password" class="input" placeholder="  Contraseña" style="text-align: initial; background-color: #fff; color:#39C5BB ;  border-radius: 15px"></ion-input>
+      </div>
+      <ion-button expand="full" color="#6A1A7B" style="margin-top: 50px; margin-bottom: 24px; background-color: #00BFB1; color: #ffffff;">Iniciar Sesión</ion-button>
+      <p style="text-align: center; margin-bottom: 16px; margin-top: 30px; color: #ffffff;">¿Olvidaste tu contraseña?</p>
+      <ion-button expand="full" color="#6A1A7B" style="margin-bottom: 24px; margin-top: 40px; background-color: #003834; color: #ffffff;">Crear cuenta</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

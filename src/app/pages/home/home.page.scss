@@ -8,24 +8,36 @@
   transform: translateY(-50%);
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-input {
+  transition: transform 0.3s ease-in-out;
+
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+ion-input:focus {
+  transform: translateY(-5px);
 
-  color: #8c8c8c;
-
-  margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+/* Animación para los elementos cuando se enfocan */
+.animated-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  transition: transform 0.3s, font-size 0.3s;
 }
 
-.chokita{
-  font-weight: bold;
+.animated-item:focus-within {
+  transform: translateY(-24px);
 }
+
+.animated-item ion-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+/* Estilos generales para los elementos ion-input */
+.animated-item ion-input {
+  flex: 1;
+  background-color: #00776E;
+}
+
