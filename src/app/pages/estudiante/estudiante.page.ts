@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-inicio-pagina-web',
-  templateUrl: './inicio-pagina-web.page.html',
-  styleUrls: ['./inicio-pagina-web.page.scss'],
+  selector: 'app-estudiante',
+  templateUrl: './estudiante.page.html',
+  styleUrls: ['./estudiante.page.scss'],
 })
-export class InicioPaginaWebPage implements OnInit {
+export class EstudiantePage implements OnInit {
 
  usuario={
   username:'',
@@ -24,8 +24,8 @@ export class InicioPaginaWebPage implements OnInit {
 
   onSubmit()
   {
-    if (this.usuario.username=="nico" && this.usuario.password=="nico"){
-      this.router.navigate(['/pagina-scan-qr'])
+    if (this.usuario.username=="gaby" && this.usuario.password=="gaby"){
+      this.router.navigate(['/pagina-qr-profe'])
     }
     else{
       

@@ -42,6 +42,14 @@ const routes: Routes = [
     path: 'perfil',
     loadChildren: () => import('./pages/perfil/perfil.module').then( m => m.PerfilPageModule)
   },
+  {
+    path: 'estudiante',
+    loadChildren: () => import('./pages/estudiante/estudiante.module').then( m => m.EstudiantePageModule)
+  },
+  {
+    path: 'pagina-scan-qr',
+    loadChildren: () => import('./pages/pagina-scan-qr/pagina-scan-qr.module').then( m => m.PaginaScanQrPageModule)
+  },
 
 ];
 

@@ -1,8 +1,8 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'unidad1',
+  appId: 'com.appqr.appqr',
+  appName: 'Ionic-QR',
   webDir: 'www',
   server: {
     androidScheme: 'https'

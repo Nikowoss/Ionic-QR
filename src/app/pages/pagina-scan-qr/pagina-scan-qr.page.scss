@@ -1,0 +1,32 @@
+ion-button[color="tertiary"] {
+    --ion-color-tertiary: #39c5bb;
+  }
+
+  ion-toolbar[color="dark"] {
+    --ion-color-dark: #003834;
+  }
+  ion-menu-button.custom-menu-button {
+    --color: #003834;
+  }
+  
+  .qr-animation {
+    width: 200px;
+    height: 200px;
+    background: url('../../../assets/icon/scan.png') no-repeat;
+    background-size: contain;
+    animation: scanAnimation 2s linear infinite;
+    margin-top: 50px;
+    
+
+  }
+  
+  
+  @keyframes scanAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
