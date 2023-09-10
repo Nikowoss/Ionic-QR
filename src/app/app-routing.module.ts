@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'pagina-scan-qr',
     loadChildren: () => import('./pages/pagina-scan-qr/pagina-scan-qr.module').then( m => m.PaginaScanQrPageModule)
   },
+  {
+    path: 'perfil-estudiante',
+    loadChildren: () => import('./pages/perfil-estudiante/perfil-estudiante.module').then( m => m.PerfilEstudiantePageModule)
+  },
 
 ];
 
