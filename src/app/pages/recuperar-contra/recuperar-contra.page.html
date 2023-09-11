@@ -3,18 +3,18 @@
     <ion-grid [fixed]="true">
       <ion-row>
         <ion-col size="3"></ion-col>
-        <ion-col style="background-color: aliceblue;margin-top: 20px;" class="ion-padding borde">
+        <ion-col style="background-color:#00776E;margin-top: 20px; border-radius: 15px;" class="ion-padding borde">
           <div class="ion-text-start" style="margin-top: 10px;">
-            <a fill="outline" routerLink="/inicio-pagina-web"><ion-icon name="arrow-back"></ion-icon>
+            <a style="color: #39C5BB;" fill="outline" routerLink="/estudiante"><ion-icon name="arrow-back"></ion-icon>
               Volver
             </a>
           </div>
-          <h3>Recuperar Contraseña</h3>
+          <h3 style="color: #AAE7E3">Recuperar Contraseña</h3>
           <form #miFormulario="ngForm" (ngSubmit)="onSubmit()">
-            <ion-input labelPlacement="floating" helperText="Formato: ayuda@dominio.cl" label="E-mail" required
+            <ion-input style="color: #AAE7E3" labelPlacement="floating" helperText="Formato: ayuda@dominio.cl" label="E-mail" required
               type="email" aria-label="Email" name="email" [(ngModel)]="usuario.username"></ion-input>
             <div>
-              <ion-button style="width: 200px;" color="primary" type="submit" class="ion-padding"
+              <ion-button style="width: 200px;" color="tertiary" type="submit" class="ion-padding"
                 [disabled]="miFormulario.invalid">
                 Ingresar
               </ion-button>

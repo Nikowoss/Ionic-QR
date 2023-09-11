@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EncabezadoComponent } from './encabezado/encabezado.component';
 import { IonicModule} from '@ionic/angular';
+import { MenuEstudianteComponent } from './menu-estudiante/menu-estudiante.component';
 
 
 
 @NgModule({
-  declarations: [EncabezadoComponent],
-  exports:[EncabezadoComponent],
+  declarations: [MenuEstudianteComponent],
+  exports:[MenuEstudianteComponent],
   imports: [
     CommonModule,
     IonicModule,

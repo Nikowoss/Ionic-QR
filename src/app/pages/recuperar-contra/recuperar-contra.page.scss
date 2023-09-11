@@ -1,6 +1,12 @@
 ion-content.fondo{
-    --background: url(../../../assets/icon/fab9022ebb88e53546cd000de047ad5c.jpg);
+    --background: url(../../../assets/icon/fondo.jpg);
 }
 .borde{
-    border: 5px solid #1b80d8;
+    border: 5px solid #00776E;
 }
+
+
+ion-button[color="tertiary"] {
+    --ion-color-tertiary: #39c5bb;
+  }
+  
