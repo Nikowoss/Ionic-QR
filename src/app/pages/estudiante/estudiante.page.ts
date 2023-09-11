@@ -25,7 +25,7 @@ export class EstudiantePage implements OnInit {
   onSubmit()
   {
     if (this.usuario.username=="gaby" && this.usuario.password=="gaby"){
-      this.router.navigate(['/pagina-qr-profe'])
+      this.router.navigate(['/pagina-scan-qr'])
     }
     else{
       
