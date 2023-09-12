@@ -6,11 +6,11 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { MenuEstudianteComponent } from './components/menu-estudiante/menu-estudiante.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,MenuComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

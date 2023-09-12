@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { PaginaScanQrPageRoutingModule } from './pagina-scan-qr-routing.module';
 
 import { PaginaScanQrPage } from './pagina-scan-qr.page';
-import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [

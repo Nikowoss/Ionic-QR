@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AlertController } from '@ionic/angular';
+import { AlertController, MenuController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -11,7 +11,8 @@ export class RecuperarContraPage implements OnInit {
 
   constructor(
     private alertController:AlertController,
-    private router:Router
+    private router:Router,
+    public menuCtrl:MenuController,
   ) { }
   usuario={
     username:''
@@ -20,9 +21,9 @@ export class RecuperarContraPage implements OnInit {
   }
   onSubmit()
   {
-    if (this.usuario.username=="nico"){
+    if (this.usuario.username=="gaby"){
       this.presentAlertAA()
-      this.router.navigate(['/inicio-pagina-web'])
+      this.router.navigate(['/estudiante'])
     }
     else{
       
@@ -57,5 +58,11 @@ export class RecuperarContraPage implements OnInit {
     await alert.present();
 
  
+  }
+  ionViewDidEnter() {
+    this.menuCtrl.enable(false)
+  }
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true)
   }
 }
