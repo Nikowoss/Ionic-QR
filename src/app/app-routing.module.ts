@@ -30,6 +30,10 @@ const routes: Routes = [
     path: 'asignaturas',
     loadChildren: () => import('./pages/asignaturas/asignaturas.module').then( m => m.AsignaturasPageModule)
   },
+  {
+    path: 'scancorrecto',
+    loadChildren: () => import('./pages/scancorrecto/scancorrecto.module').then( m => m.ScancorrectoPageModule)
+  },
 
 ];
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-scan-qr',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaginaScanQrPage implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) {}
 
+  onClick(ruta:string)
+  {
+    this.router.navigate(['/scancorrecto'])
+  }
   ngOnInit() {
   }
 
