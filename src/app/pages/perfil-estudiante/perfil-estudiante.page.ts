@@ -29,7 +29,8 @@ ngOnInit() {
 onSubmit()
 {
   if (this.valid_pass.pass1==this.valid_pass.pass2){
-    this.router.navigate(['/pagina-scan-qr'])
+    this.contraseñacambiada()
+    
   }
   else{
     
@@ -37,7 +38,18 @@ onSubmit()
   }
 
 }
+async contraseñacambiada() {
+  const alert = await this.alertController.create({
+    header: 'Contraseña Cambiada',
+    message: "Tu contraseña ha sido cambiada",
+    buttons: ["Aceptar"],
+    backdropDismiss:false,
 
+
+  });
+
+  await alert.present();
+}
 
 async presentAlert() {
   const alert = await this.alertController.create({
