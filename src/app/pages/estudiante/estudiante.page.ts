@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertController } from '@ionic/angular';
+import { AlertController, MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-estudiante',
@@ -16,7 +16,8 @@ export class EstudiantePage implements OnInit {
 
   constructor(
     private router:Router,
-    private alertController:AlertController
+    private alertController:AlertController,
+    public menuCtrl:MenuController,
     ) { }
 
   ngOnInit() {
@@ -48,5 +49,11 @@ export class EstudiantePage implements OnInit {
     await alert.present();
 
  
+  }
+  ionViewDidEnter() {
+    this.menuCtrl.enable(false)
+  }
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true)
   }
 }
