@@ -33,7 +33,11 @@ const routes: Routes = [
   {
     path: 'scancorrecto',
     loadChildren: () => import('./pages/scancorrecto/scancorrecto.module').then( m => m.ScancorrectoPageModule)
+  },  {
+    path: 'crear',
+    loadChildren: () => import('./pages/crear/crear.module').then( m => m.CrearPageModule)
   },
+
 
 ];
 
